@@ -3162,24 +3162,25 @@ figcaption {
 }
 
 .link-block-20 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 40px;
+   display: -ms-grid;
+  display: grid;
+  margin-top:40px;
   margin-right: 300px;
   margin-left: 300px;
+  justify-items: center;
+  grid-auto-flow: row;
   grid-auto-columns: 1fr;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: auto auto;
-  grid-template-rows: auto auto;
-  -webkit-transition: box-shadow 525ms ease, -webkit-transform 450ms ease;
-  transition: box-shadow 525ms ease, -webkit-transform 450ms ease;
-  transition: transform 450ms ease, box-shadow 525ms ease;
-  transition: transform 450ms ease, box-shadow 525ms ease, -webkit-transform 450ms ease;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  -webkit-transition: opacity 1000ms ease, -webkit-transform 450ms ease;
+  transition: opacity 1000ms ease, -webkit-transform 450ms ease;
+  transition: opacity 1000ms ease, transform 450ms ease;
+  transition: opacity 1000ms ease, transform 450ms ease, -webkit-transform 450ms ease;
+  text-align: center;
 }
 
 .link-block-20:hover {
